@@ -105,12 +105,17 @@ export { default as DemoComponent } from './DemoComponent';
 ## Publishing the Package
 To publish your package, follow these steps:
 
-1.Build your package:
+1.Login(If you are doing 1st time):
+```bash
+npm login
+```
+
+2.Build your package:
 ```bash
 npm run build
 ```
 
-2.Publish your package:
+3.Publish your package:
 ```bash
 npm publish
 ```
