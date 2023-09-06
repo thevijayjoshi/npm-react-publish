@@ -53,11 +53,7 @@ npx create-react-library <your-package-name>
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-icons": "^4.10.1",
-    "antd": "^5.8.2",
-    "react-select": "^5.7.4",
-    "axios": "^1.4.0"
+     // Add your peerDependencies here
   },
   "devDependencies": {
     // Add your devDependencies here
@@ -76,5 +72,52 @@ Make sure to add the dependencies your component needs in the peerDependencies s
 Here's the recommended folder structure:
 
 ```text
-hiiiiii
+- dist
+- example
+- node_modules
+- src
+  - Components
+    - DemoComponent
+      - index.js (Write your component code here)
+    - index.js
+  - index.js
+- .editorconfig
+- .eslintignore
+- .eslintrc
+- .gitignore
+- .prettierrc
+- .travis.yml
+- package-lock.json
+- package.json
+- README.md
 ```
+
+## Publishing the Package
+To publish your package, follow these steps:
+
+1.Build your package:
+```bash
+npm run build
+```
+
+2.Publish your package:
+```bash
+npm publish
+```
+
+Hooray! Your React component is now published as an NPM package.
+
+## Making Changes
+If you want to make changes after publishing, update the version in your package.json file, and then run the following commands:
+
+1.Build your package:
+```bash
+npm run build
+```
+
+2.Publish your package:
+```bash
+npm publish
+```
+
+That's it! Your changes will be reflected in the latest version of your package on NPM.
