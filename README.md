@@ -92,6 +92,16 @@ Here's the recommended folder structure:
 - README.md
 ```
 
+## How to import and export?
+
+```jsx
+// src/index.js code
+export * from './Components';
+
+// src/components/index.js
+export { default as DemoComponent } from './DemoComponent';
+```
+
 ## Publishing the Package
 To publish your package, follow these steps:
 
