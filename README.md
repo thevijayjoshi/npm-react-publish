@@ -15,3 +15,13 @@ Ensure that you have a unique name for your package. You can verify the uniquene
 ```bash
 npm search <your-package-name>
 ```
+
+## Initializing the Package
+
+To initialize your package, run the following command, replacing <your-package-name> with your desired package name:
+
+```bash
+npx create-react-library <your-package-name>
+```
+
+Your package.json file will look like this:
